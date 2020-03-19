@@ -298,10 +298,10 @@ io.on('connection', (socket) => {
         else
         {
             let delta = receiveNumber - number;
-            let hightLow = ((delta) > 0) ? "High" : "Low";
+            let highLow = ((delta) > 0) ? "High" : "Low";
             
             let info = {
-                message: hightLow
+                message: highLow
             }
 
             socket.emit('message.send', info)
